@@ -15,7 +15,7 @@
   }
   html { scroll-behavior: smooth; }
   body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--ink); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
- 
+
   /* NAV */
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 2.5rem; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
   .nav-logo img { height: 56px; width: auto; display: block; }
@@ -24,7 +24,7 @@
   .nav-links a:hover { color: var(--green); }
   .nav-cta { background: var(--green) !important; color: var(--white) !important; padding: 0.55rem 1.25rem !important; border-radius: 2px; }
   .nav-cta:hover { background: var(--green-dark) !important; }
- 
+
   /* HERO */
   .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 70px; }
   .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 4.5rem 4rem 4.5rem 5rem; background: var(--white); }
@@ -32,24 +32,24 @@
   .hero-right-img { position: absolute; inset: 0; background-image: url('RolexWatchesInWindow.jpg'); background-size: cover; background-position: center; filter: brightness(0.72); }
   .hero-right-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,64,28,0.4) 0%, rgba(0,0,0,0.15) 100%); z-index: 1; }
   .hero-card-wrap { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; height: 100%; padding: 2.5rem; }
- 
+
   .hero-tag { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green); margin-bottom: 1.1rem; display: flex; align-items: center; gap: 0.6rem; }
   .hero-tag::before { content: ''; display: inline-block; width: 28px; height: 2px; background: var(--green); }
   .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 3.6vw, 3.8rem); line-height: 1.1; font-weight: 700; margin-bottom: 1.1rem; color: var(--ink); }
   .hero-title em { font-style: italic; color: var(--green); }
   .hero-subtitle { font-size: 1rem; color: var(--muted); font-weight: 300; max-width: 420px; margin-bottom: 2rem; line-height: 1.75; }
   .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.25rem; }
- 
+
   .btn-primary { background: var(--green); color: var(--white); padding: 0.875rem 1.75rem; border: none; border-radius: 2px; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: background 0.2s; display: inline-block; }
   .btn-primary:hover { background: var(--green-dark); }
   .btn-secondary { background: transparent; color: var(--ink); padding: 0.875rem 1.75rem; border: 1px solid var(--border); border-radius: 2px; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: border-color 0.2s, color 0.2s; display: inline-block; }
   .btn-secondary:hover { border-color: var(--green); color: var(--green); }
- 
+
   .hero-proof { display: flex; gap: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border); }
   .proof-item { display: flex; flex-direction: column; gap: 3px; }
   .proof-num { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--green); line-height: 1; }
   .proof-label { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.05em; }
- 
+
   /* REPORT CARD */
   .report-card { background: var(--white); border-radius: 6px; padding: 1.6rem; max-width: 350px; width: 100%; box-shadow: 0 12px 60px rgba(0,0,0,0.35); animation: float 6s ease-in-out infinite; }
   @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
@@ -68,27 +68,27 @@
   .verdict-icon { width: 26px; height: 26px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.78rem; flex-shrink: 0; }
   .verdict-text { font-size: 0.81rem; font-weight: 500; color: var(--green-dark); }
   .verdict-sub { font-size: 0.71rem; color: var(--green); }
- 
+
   /* TICKER */
   .ticker { background: var(--green); padding: 0.65rem 0; overflow: hidden; white-space: nowrap; }
   .ticker-inner { display: inline-block; animation: ticker 35s linear infinite; }
   .ticker-inner span { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; margin-right: 2.5rem; color: rgba(255,255,255,0.65); }
   .ticker-inner strong { color: rgba(255,255,255,0.95); font-weight: 500; }
   @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
- 
+
   /* SHARED */
   .section-tag { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green); margin-bottom: 0.65rem; display: flex; align-items: center; gap: 0.6rem; }
   .section-tag::before { content: ''; display: inline-block; width: 28px; height: 2px; background: var(--green); border-radius: 2px; }
   .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 2.6vw, 2.5rem); line-height: 1.15; margin-bottom: 0.65rem; color: var(--ink); }
   .section-desc { font-size: 0.95rem; color: var(--muted); font-weight: 300; max-width: 520px; line-height: 1.75; }
- 
+
   /* SOCIAL PROOF */
   .social-strip { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 3rem 5rem; }
   .social-strip-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: stretch; }
   .social-card { background: var(--white); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; transition: box-shadow 0.2s; }
   .social-card:hover { box-shadow: 0 4px 24px rgba(0,128,55,0.1); }
   .social-card img { width: 100%; height: auto; display: block; }
- 
+
   /* WHAT YOU GET */
   #what { padding: 4rem 5rem; }
   .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 2.25rem; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
@@ -99,7 +99,7 @@
   .feature-icon { font-size: 1.2rem; margin-bottom: 0.65rem; }
   .feature-title { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--ink); }
   .feature-desc { font-size: 0.83rem; color: var(--muted); line-height: 1.6; font-weight: 300; }
- 
+
   /* SERVICES */
   #services { display: grid; grid-template-columns: 1fr 1fr; min-height: 560px; }
   .services-photo { position: relative; overflow: hidden; }
@@ -117,7 +117,7 @@
   .service-features li { font-size: 0.83rem; display: flex; align-items: flex-start; gap: 0.5rem; color: var(--ink); }
   .service-features li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--green); flex-shrink: 0; margin-top: 0.5em; }
   .service-btns { display: flex; gap: 0.6rem; flex-wrap: wrap; }
- 
+
   /* NEWSLETTER */
   .newsletter-section { background: var(--green-deeper); color: var(--white); display: grid; grid-template-columns: 1fr 1fr; min-height: 460px; }
   .newsletter-photo { position: relative; overflow: hidden; }
@@ -139,9 +139,9 @@
   .newsletter-submit { background: var(--green); border: 1px solid var(--green); color: white; padding: 0.9rem 1.5rem; border-radius: 0 2px 2px 0; font-family: 'DM Sans', sans-serif; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; white-space: nowrap; }
   .newsletter-submit:hover { background: #005a27; }
   .newsletter-privacy { font-size: 0.74rem; color: rgba(255,255,255,0.3); margin-top: 0.55rem; }
- 
+
   /* ABOUT */
-  .about-section { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .about-section { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border); }
   .about-text { padding: 4rem 4rem 4rem 5rem; display: flex; flex-direction: column; justify-content: center; background: var(--surface); }
   .about-title { font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 2.4vw, 2.4rem); line-height: 1.2; margin-bottom: 0.9rem; color: var(--ink); }
   .about-body { font-size: 0.93rem; color: var(--muted); font-weight: 300; line-height: 1.8; margin-bottom: 1.6rem; }
@@ -149,12 +149,12 @@
   .about-right { position: relative; display: flex; align-items: center; justify-content: center; padding: 4rem 3rem; overflow: hidden; min-height: 420px; }
   .about-right-bg { position: absolute; inset: 0; background-image: url('PatekPhilippeStore.jpg'); background-size: cover; background-position: center; filter: brightness(0.18) saturate(0.3); }
   .about-portrait-wrap { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 1.1rem; }
-  .about-portrait { width: 200px; height: 260px; border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%; overflow: hidden; border: 3px solid rgba(0,128,55,0.6); box-shadow: 0 8px 40px rgba(0,0,0,0.6); }
-  .about-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+  .about-portrait { width: 220px; height: 220px; border-radius: 50%; overflow: hidden; border: 3px solid rgba(0,128,55,0.6); box-shadow: 0 8px 40px rgba(0,0,0,0.6); }
+  .about-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
   .about-name-card { background: rgba(0,128,55,0.88); backdrop-filter: blur(8px); border-radius: 4px; padding: 0.65rem 1.4rem; text-align: center; }
   .about-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: white; }
   .about-role { font-size: 0.75rem; color: rgba(255,255,255,0.75); letter-spacing: 0.06em; }
- 
+
   /* FAQ */
   #faqs { padding: 4rem 5rem; background: var(--surface); }
   .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 2.25rem; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
@@ -164,7 +164,7 @@
   .faq-item:nth-last-child(-n+2) { border-bottom: none; }
   .faq-q { font-family: 'Playfair Display', serif; font-size: 0.93rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--ink); }
   .faq-a { font-size: 0.83rem; color: var(--muted); line-height: 1.7; font-weight: 300; }
- 
+
   /* CTA BANNER */
   .cta-banner { background-image: url('RolexStoreNightBlackandWhite.jpg'); background-size: cover; background-position: center 40%; position: relative; padding: 5rem; text-align: center; }
   .cta-banner::before { content: ''; position: absolute; inset: 0; background: rgba(0,40,15,0.83); }
@@ -177,7 +177,7 @@
   .btn-white:hover { background: var(--green-light); }
   .btn-outline-white { background: transparent; color: white; padding: 0.875rem 1.75rem; border: 1px solid rgba(255,255,255,0.4); border-radius: 2px; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: border-color 0.2s; display: inline-block; }
   .btn-outline-white:hover { border-color: white; }
- 
+
   /* FOOTER */
   footer { background: var(--ink); color: rgba(255,255,255,0.4); padding: 2.5rem 5rem; display: flex; justify-content: space-between; align-items: center; }
   .footer-logo img { height: 48px; width: auto; filter: brightness(0) invert(1); opacity: 0.75; }
@@ -185,11 +185,11 @@
   .footer-links a { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
   .footer-links a:hover { color: #6dcc9a; }
   .footer-copy { font-size: 0.78rem; }
- 
+
   /* ANIMATIONS */
   .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
- 
+
   /* RESPONSIVE */
   @media (max-width: 960px) {
     nav { padding: 0.6rem 1.5rem; }
@@ -220,7 +220,7 @@
 </style>
 </head>
 <body>
- 
+
 <nav>
   <a href="#" class="nav-logo"><img src="Logo.png" alt="Watch Clarity"></a>
   <ul class="nav-links">
@@ -230,7 +230,7 @@
     <li><a href="https://tally.so/r/mD9EGX" class="nav-cta">Get a Report — £25</a></li>
   </ul>
 </nav>
- 
+
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-left">
@@ -267,14 +267,14 @@
     </div>
   </div>
 </section>
- 
+
 <!-- TICKER -->
 <div class="ticker">
   <div class="ticker-inner">
     <span>Condition checks &nbsp;<strong>·</strong>&nbsp;</span><span>Red flag detection &nbsp;<strong>·</strong>&nbsp;</span><span>Market price comparison &nbsp;<strong>·</strong>&nbsp;</span><span>Watch sourcing &nbsp;<strong>·</strong>&nbsp;</span><span><strong>Buy, Negotiate, or Avoid</strong> verdicts &nbsp;<strong>·</strong>&nbsp;</span><span>eBay · Chrono24 · Watchfinder · Subdial &nbsp;<strong>·</strong>&nbsp;</span><span>Condition checks &nbsp;<strong>·</strong>&nbsp;</span><span>Red flag detection &nbsp;<strong>·</strong>&nbsp;</span><span>Market price comparison &nbsp;<strong>·</strong>&nbsp;</span><span>Watch sourcing &nbsp;<strong>·</strong>&nbsp;</span><span><strong>Buy, Negotiate, or Avoid</strong> verdicts &nbsp;<strong>·</strong>&nbsp;</span><span>eBay · Chrono24 · Watchfinder · Subdial &nbsp;<strong>·</strong>&nbsp;</span>
   </div>
 </div>
- 
+
 <!-- SOCIAL PROOF -->
 <div class="social-strip">
   <div style="text-align:center;margin-bottom:1.75rem;">
@@ -293,7 +293,7 @@
     </div>
   </div>
 </div>
- 
+
 <!-- WHAT YOU GET -->
 <section id="what">
   <div class="section-tag">What you get</div>
@@ -308,7 +308,7 @@
     <div class="feature-item fade-up"><div class="feature-icon">🔗</div><div class="feature-title">Any online platform</div><div class="feature-desc">eBay, Chrono24, Watchfinder, Subdial, private dealers — if there's a URL, we can assess it.</div></div>
   </div>
 </section>
- 
+
 <!-- SERVICES -->
 <div id="services">
   <div class="services-photo">
@@ -354,7 +354,7 @@
     </div>
   </div>
 </div>
- 
+
 <!-- NEWSLETTER -->
 <section class="newsletter-section" id="newsletter">
   <div class="newsletter-photo">
@@ -371,7 +371,7 @@
       <li>Market notes and buying tips</li>
       <li>Completely free</li>
     </ul>
- 
+
     <!-- =====================================================
          MAILERLITE SIGNUP FORM
          Replace everything between these comments with your
@@ -385,10 +385,10 @@
     <p class="newsletter-privacy">No spam, ever. Unsubscribe at any time.</p>
     <p id="signup-msg" style="font-size:0.85rem;color:#6dcc9a;margin-top:0.6rem;display:none;">You're on the list — look out for the next issue.</p>
     <!-- ===================================================== -->
- 
+
   </div>
 </section>
- 
+
 <!-- ABOUT -->
 <div class="about-section" id="about">
   <div class="about-text">
@@ -405,8 +405,7 @@
     <div class="about-right-bg"></div>
     <div class="about-portrait-wrap">
       <div class="about-portrait">
-        <img src="https://watchclarity.com/assets/images/image02.jpg" alt="Midas Rashid"
-          onerror="this.parentElement.style.background='var(--green-dark)';">
+        <img src="midas.png" alt="Midas Rashid — founder of Watch Clarity">
       </div>
       <div class="about-name-card">
         <div class="about-name">Midas Rashid</div>
@@ -415,7 +414,7 @@
     </div>
   </div>
 </div>
- 
+
 <!-- FAQ -->
 <section id="faqs">
   <div class="section-tag">Questions</div>
@@ -429,7 +428,7 @@
     <div class="faq-item fade-up"><div class="faq-q">Can I see an example report first?</div><div class="faq-a">Yes — <a href="https://drive.google.com/file/d/15sxU9MyRCdHes-37P-pWwEfMFWgO_425/view?usp=sharing" style="color:var(--green);text-decoration:underline;text-underline-offset:3px;">view a sample report here</a> before you commit.</div></div>
   </div>
 </section>
- 
+
 <!-- CTA BANNER -->
 <div class="cta-banner">
   <div class="cta-banner-inner">
@@ -441,7 +440,7 @@
     </div>
   </div>
 </div>
- 
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo"><img src="Logo.png" alt="Watch Clarity"></div>
@@ -454,7 +453,7 @@
   </ul>
   <div class="footer-copy">© 2026 Watch Clarity</div>
 </footer>
- 
+
 <script>
   function handleSignup(e) {
     e.preventDefault();
@@ -468,7 +467,6 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 </script>
- 
+
 </body>
 </html>
- 
