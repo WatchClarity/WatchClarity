@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watch Clarity — Buy Pre-Owned With Confidence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #008037;
+    --green-dark: #005a27;
+    --green-deeper: #003d1a;
+    --green-light: #e6f4ed;
+    --green-mid: #4da373;
+    --white: #ffffff;
+    --off-white: #F7FAF8;
+    --ink: #0f1f16;
+    --muted: #5a7060;
+    --border: #d0e4d9;
+    --surface: #f0f7f3;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+  }
+
+  .nav-logo img {
+    height: 36px;
+    width: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--green); }
+
+  .nav-cta {
+    background: var(--green) !important;
+    color: var(--white) !important;
+    padding: 0.55rem 1.25rem !important;
+    border-radius: 2px;
+    letter-spacing: 0.06em;
+  }
+
+  .nav-cta:hover { background: var(--green-dark) !important; color: var(--white) !important; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 65px;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 4rem 6rem 5rem;
+    border-right: 1px solid var(--border);
+  }
+
+  .hero-tag {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .hero-tag::before {
+    content: '';
+    display: inline-block;
+    width: 28px; height: 2px;
+    background: var(--green);
+    border-radius: 2px;
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.6rem, 4vw, 4rem);
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--ink);
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--green);
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--muted);
+    font-weight: 300;
+    max-width: 420px;
+    margin-bottom: 2.5rem;
+    line-height: 1.75;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  .btn-primary {
+    background: var(--green);
+    color: var(--white);
+    padding: 0.875rem 1.75rem;
+    border: none;
+    border-radius: 2px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover { background: var(--green-dark); }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--ink);
+    padding: 0.875rem 1.75rem;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+    display: inline-block;
+  }
+
+  .btn-secondary:hover { border-color: var(--green); color: var(--green); }
+
+  .hero-proof {
+    display: flex;
+    gap: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .proof-item { display: flex; flex-direction: column; gap: 3px; }
+
+  .proof-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--green);
+    line-height: 1;
+  }
+
+  .proof-label {
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    font-weight: 400;
+  }
+
+  /* HERO RIGHT */
+  .hero-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 3rem;
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  .hero-right::before {
+    content: '';
+    position: absolute;
+    bottom: -100px; right: -100px;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,128,55,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-right::after {
+    content: '';
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 240px; height: 240px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,128,55,0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .report-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2rem;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 8px 48px rgba(0,128,55,0.10), 0 2px 8px rgba(0,0,0,0.04);
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .report-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .report-card-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+  }
+
+  .report-card-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--green);
+  }
+
+  .report-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.35;
+    color: var(--ink);
+  }
+
+  .report-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.85rem;
+  }
+
+  .report-row:last-of-type { border-bottom: none; }
+  .report-row-label { color: var(--muted); }
+
+  .badge {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.22rem 0.6rem;
+    border-radius: 2px;
+    letter-spacing: 0.04em;
+  }
+
+  .badge-green { background: #e6f4ed; color: #005a27; }
+  .badge-amber { background: #fef3e2; color: #8a5e00; }
+  .badge-red { background: #fde8e8; color: #8a1f1f; }
+
+  .verdict-bar {
+    margin-top: 1rem;
+    padding: 0.875rem 1rem;
+    background: var(--green-light);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .verdict-icon {
+    width: 30px; height: 30px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+
+  .verdict-text { font-size: 0.875rem; font-weight: 500; color: var(--green-dark); }
+  .verdict-sub { font-size: 0.775rem; color: var(--green); }
+
+  /* TICKER */
+  .ticker {
+    background: var(--green);
+    color: var(--white);
+    padding: 0.65rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .ticker-inner {
+    display: inline-block;
+    animation: ticker 35s linear infinite;
+  }
+
+  .ticker-inner span {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-right: 2.5rem;
+    color: rgba(255,255,255,0.65);
+  }
+
+  .ticker-inner strong { color: rgba(255,255,255,0.95); font-weight: 500; }
+
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* SHARED SECTION STYLES */
+  .section-tag {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .section-tag::before {
+    content: '';
+    display: inline-block;
+    width: 28px; height: 2px;
+    background: var(--green);
+    border-radius: 2px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.9rem, 3vw, 2.8rem);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    color: var(--ink);
+  }
+
+  .section-desc {
+    font-size: 1rem;
+    color: var(--muted);
+    font-weight: 300;
+    max-width: 520px;
+    line-height: 1.75;
+  }
+
+  /* WHAT YOU GET */
+  #what { padding: 6rem 5rem; }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 3rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .feature-item {
+    padding: 2rem;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s;
+  }
+
+  .feature-item:hover { background: var(--surface); }
+  .feature-item:nth-child(3n) { border-right: none; }
+  .feature-item:nth-child(n+4) { border-bottom: none; }
+
+  .feature-icon {
+    width: 40px; height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    background: var(--white);
+  }
+
+  .feature-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    color: var(--ink);
+  }
+
+  .feature-desc {
+    font-size: 0.86rem;
+    color: var(--muted);
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  /* SERVICES */
+  #services {
+    padding: 6rem 5rem;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .service-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2.5rem;
+    position: relative;
+    transition: box-shadow 0.2s, border-color 0.2s;
+  }
+
+  .service-card:hover {
+    border-color: var(--green);
+    box-shadow: 0 4px 24px rgba(0,128,55,0.08);
+  }
+
+  .service-price {
+    position: absolute;
+    top: 2rem; right: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--green);
+  }
+
+  .service-icon { font-size: 1.4rem; margin-bottom: 1rem; }
+
+  .service-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    color: var(--ink);
+    padding-right: 4rem;
+  }
+
+  .service-tagline {
+    font-size: 0.875rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .service-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .service-features li {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    color: var(--ink);
+  }
+
+  .service-features li::before {
+    content: '';
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+    margin-top: 0.55em;
+  }
+
+  /* NEWSLETTER */
+  .newsletter-section {
+    background: var(--green-deeper);
+    color: var(--white);
+    padding: 6rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .newsletter-section .section-tag { color: #6dcc9a; }
+  .newsletter-section .section-tag::before { background: #6dcc9a; }
+
+  .newsletter-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    color: var(--white);
+  }
+
+  .newsletter-title em { font-style: italic; color: #6dcc9a; }
+
+  .newsletter-desc {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.6);
+    font-weight: 300;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+
+  .newsletter-perks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-bottom: 2rem;
+  }
+
+  .newsletter-perks li {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.75);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .newsletter-perks li::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #6dcc9a;
+    flex-shrink: 0;
+  }
+
+  .newsletter-form { display: flex; max-width: 440px; }
+
+  .newsletter-input {
+    flex: 1;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+    padding: 0.9rem 1.25rem;
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .newsletter-input::placeholder { color: rgba(255,255,255,0.3); }
+  .newsletter-input:focus { border-color: #6dcc9a; }
+
+  .newsletter-submit {
+    background: var(--green);
+    border: 1px solid var(--green);
+    color: white;
+    padding: 0.9rem 1.5rem;
+    border-radius: 0 2px 2px 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+
+  .newsletter-submit:hover { background: #005a27; border-color: #005a27; }
+
+  .newsletter-privacy {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.3);
+    margin-top: 0.75rem;
+  }
+
+  /* NEWSLETTER PREVIEW CARD */
+  .nl-preview {
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .nl-preview-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
+  }
+
+  .nl-preview-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #6dcc9a;
+    margin-bottom: 0.5rem;
+  }
+
+  .nl-preview-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 0.3rem;
+  }
+
+  .nl-preview-sub {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    font-style: italic;
+  }
+
+  .nl-preview-row {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.65);
+  }
+
+  .nl-preview-row:last-child { border-bottom: none; }
+
+  .nl-tag {
+    font-size: 0.7rem;
+    background: rgba(0,128,55,0.3);
+    color: #6dcc9a;
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  /* ABOUT */
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .about-text {
+    padding: 6rem 5rem;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--white);
+  }
+
+  .about-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.9rem, 3vw, 2.6rem);
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+    color: var(--ink);
+  }
+
+  .about-body {
+    font-size: 0.975rem;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .about-socials { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+  .about-image {
+    background: var(--surface);
+    overflow: hidden;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  /* FAQ */
+  #faqs { padding: 6rem 5rem; background: var(--surface); }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-top: 3rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .faq-item {
+    padding: 2rem;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--white);
+    transition: background 0.2s;
+  }
+
+  .faq-item:hover { background: var(--off-white); }
+  .faq-item:nth-child(2n) { border-right: none; }
+  .faq-item:nth-last-child(-n+2) { border-bottom: none; }
+
+  .faq-q {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.975rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+  }
+
+  .faq-a {
+    font-size: 0.86rem;
+    color: var(--muted);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.4);
+    padding: 2.5rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo img { height: 32px; width: auto; filter: brightness(0) invert(1); opacity: 0.8; }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+
+  .footer-links a {
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: #6dcc9a; }
+  .footer-copy { font-size: 0.78rem; }
+
+  /* ANIMATIONS */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 4rem 1.75rem; border-right: none; border-bottom: 1px solid var(--border); }
+    .hero-right { padding: 3rem 1.75rem; }
+    #what, #services, #faqs { padding: 4rem 1.75rem; }
+    .feature-grid { grid-template-columns: 1fr; }
+    .feature-item { border-right: none !important; }
+    .feature-item:nth-child(n+4) { border-bottom: 1px solid var(--border); }
+    .feature-item:last-child { border-bottom: none; }
+    .services-grid { grid-template-columns: 1fr; }
+    .newsletter-section { grid-template-columns: 1fr; padding: 4rem 1.75rem; gap: 3rem; }
+    .about-section { grid-template-columns: 1fr; }
+    .about-text { padding: 4rem 1.75rem; border-right: none; }
+    .about-image { min-height: 260px; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .faq-item:nth-child(2n) { border-right: none; }
+    .faq-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    footer { flex-direction: column; gap: 1.5rem; text-align: center; padding: 2rem 1.75rem; }
+    .footer-links { flex-wrap: wrap; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="Logo_Transparent.svg" alt="Watch Clarity">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#newsletter">Watchlist</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="https://tally.so/r/mD9EGX" class="nav-cta">Get a Report — £25</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="hero-tag">Independent watch buying advice</p>
+    <h1 class="hero-title">Buy pre-owned<br>with <em>confidence.</em></h1>
+    <p class="hero-subtitle">Expert reports and independent sourcing to help you avoid costly mistakes in the pre-owned market — from a collector with 10+ years of experience.</p>
+    <div class="hero-actions">
+      <a href="#services" class="btn-primary">See services</a>
+      <a href="#newsletter" class="btn-secondary">Free newsletter</a>
+    </div>
+    <div class="hero-proof">
+      <div class="proof-item">
+        <span class="proof-num">£25</span>
+        <span class="proof-label">Per report</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">24h</span>
+        <span class="proof-label">Turnaround</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">10+</span>
+        <span class="proof-label">Years experience</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="report-card">
+      <div class="report-card-header">
+        <div class="report-card-dot"></div>
+        <div class="report-card-label">Sample report</div>
+      </div>
+      <div class="report-card-title">Rolex Submariner 126610LN<br><span style="font-weight:400; font-family:'DM Sans',sans-serif; font-size:0.85rem; color:var(--muted);">Listed on Chrono24</span></div>
+      <div class="report-row">
+        <span class="report-row-label">Condition</span>
+        <span class="badge badge-amber">Light wear</span>
+      </div>
+      <div class="report-row">
+        <span class="report-row-label">Bezel insert</span>
+        <span class="badge badge-green">Original</span>
+      </div>
+      <div class="report-row">
+        <span class="report-row-label">Crown guards</span>
+        <span class="badge badge-green">Intact</span>
+      </div>
+      <div class="report-row">
+        <span class="report-row-label">Asking price</span>
+        <span class="badge badge-amber">Slightly above market</span>
+      </div>
+      <div class="report-row">
+        <span class="report-row-label">Red flags</span>
+        <span class="badge badge-green">None detected</span>
+      </div>
+      <div class="verdict-bar">
+        <div class="verdict-icon">✓</div>
+        <div>
+          <div class="verdict-text">Verdict: Negotiate</div>
+          <div class="verdict-sub">Solid watch — try £150 below asking</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span>Condition checks &nbsp;<strong>·</strong>&nbsp;</span>
+    <span>Red flag detection &nbsp;<strong>·</strong>&nbsp;</span>
+    <span>Market price comparison &nbsp;<strong>·</strong>&nbsp;</span>
+    <span>Watch sourcing &nbsp;<strong>·</strong>&nbsp;</span>
+    <span><strong>Buy, Negotiate, or Avoid</strong> verdicts &nbsp;<strong>·</strong>&nbsp;</span>
+    <span>eBay · Chrono24 · Watchfinder · Subdial · Private dealers &nbsp;<strong>·</strong>&nbsp;</span>
+    <span>Condition checks &nbsp;<strong>·</strong>&nbsp;</span>
+    <span>Red flag detection &nbsp;<strong>·</strong>&nbsp;</span>
+    <span>Market price comparison &nbsp;<strong>·</strong>&nbsp;</span>
+    <span>Watch sourcing &nbsp;<strong>·</strong>&nbsp;</span>
+    <span><strong>Buy, Negotiate, or Avoid</strong> verdicts &nbsp;<strong>·</strong>&nbsp;</span>
+    <span>eBay · Chrono24 · Watchfinder · Subdial · Private dealers &nbsp;<strong>·</strong>&nbsp;</span>
+  </div>
+</div>
+
+<!-- WHAT YOU GET -->
+<section id="what">
+  <div class="section-tag">What you get</div>
+  <h2 class="section-title">Every report covers<br>what matters most.</h2>
+  <p class="section-desc">Pre-owned listings rarely tell the full story. A Watch Clarity report reads between the lines — so you don't get burned.</p>
+  <div class="feature-grid">
+    <div class="feature-item fade-up">
+      <div class="feature-icon">🔍</div>
+      <div class="feature-title">Condition check</div>
+      <div class="feature-desc">Photos assessed for wear, polishing, scratches, and signs of misuse — beyond what sellers choose to describe.</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">⚠️</div>
+      <div class="feature-title">Red flag highlights</div>
+      <div class="feature-desc">Swapped dials, replaced hands, wrong crowns, incorrect references — the costly traps a new buyer won't spot.</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">💷</div>
+      <div class="feature-title">Market price comparison</div>
+      <div class="feature-desc">Is the asking price fair? We compare across Chrono24, Watchfinder, eBay and more to tell you exactly where it sits.</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">✅</div>
+      <div class="feature-title">Clear verdict</div>
+      <div class="feature-desc">Buy, Negotiate, or Avoid — with a plain-English explanation. No jargon. No hedging. Just a clear answer.</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">📬</div>
+      <div class="feature-title">In your inbox within 24h</div>
+      <div class="feature-desc">Send us the listing, we get to work. Your report lands within 24 hours of payment — faster on request.</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">🔗</div>
+      <div class="feature-title">Any online platform</div>
+      <div class="feature-desc">eBay, Chrono24, Watchfinder, Subdial, private dealers — if there's a listing URL, we can assess it.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-tag">Services</div>
+  <h2 class="section-title">Two ways Watch Clarity helps.</h2>
+  <div class="services-grid">
+    <div class="service-card fade-up">
+      <span class="service-price">£25</span>
+      <div class="service-icon">🔎</div>
+      <div class="service-name">Watch Clarity Report</div>
+      <div class="service-tagline">Found a listing — but not sure if it's worth it?</div>
+      <ul class="service-features">
+        <li>Condition check from listing photos</li>
+        <li>Red flag highlights (overpolishing, swapped parts, etc.)</li>
+        <li>Market price comparison</li>
+        <li>Buy, Negotiate, or Avoid verdict</li>
+        <li>In your inbox within 24 hours</li>
+      </ul>
+      <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+        <a href="https://tally.so/r/mD9EGX" class="btn-primary">Submit a listing</a>
+        <a href="https://drive.google.com/file/d/15sxU9MyRCdHes-37P-pWwEfMFWgO_425/view?usp=sharing" class="btn-secondary">Example report</a>
+      </div>
+    </div>
+    <div class="service-card fade-up">
+      <span class="service-price">£25</span>
+      <div class="service-icon">🕵️</div>
+      <div class="service-name">Watch Clarity Sourcing</div>
+      <div class="service-tagline">Know what you want — but don't know where to find it?</div>
+      <ul class="service-features">
+        <li>Tell us your criteria (brand, model, budget, condition)</li>
+        <li>We search across trusted platforms & dealers</li>
+        <li>You receive a shortlist of vetted options</li>
+        <li>Honest assessment of each option found</li>
+        <li>In your inbox within 24 hours</li>
+      </ul>
+      <a href="https://tally.so/r/nGZaVj" class="btn-primary">Start sourcing</a>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section" id="newsletter">
+  <div>
+    <div class="section-tag">Free newsletter</div>
+    <h2 class="newsletter-title">The <em>Watchlist.</em></h2>
+    <p class="newsletter-desc">A regular email with the best watch deals on the market right now — and the most interesting pieces for sale. Curated by hand. No fluff.</p>
+    <ul class="newsletter-perks">
+      <li>Best-value listings right now, hand-picked</li>
+      <li>Most interesting pieces for sale</li>
+      <li>Market notes and buying tips</li>
+      <li>Completely free, no spam</li>
+    </ul>
+    <form class="newsletter-form" onsubmit="handleSignup(event)">
+      <input type="email" class="newsletter-input" placeholder="your@email.com" required id="emailInput">
+      <button type="submit" class="newsletter-submit">Subscribe free</button>
+    </form>
+    <p class="newsletter-privacy">No spam, ever. Unsubscribe at any time.</p>
+    <p id="signup-msg" style="font-size:0.85rem; color:#6dcc9a; margin-top:0.75rem; display:none;">You're on the list — look out for the next issue.</p>
+  </div>
+  <div class="nl-preview">
+    <div class="nl-preview-header">
+      <div class="nl-preview-tag">Latest issue</div>
+      <div class="nl-preview-title">5 deals worth your attention this week</div>
+      <div class="nl-preview-sub">Including a late-dial Omega Seamaster 300 under £800</div>
+    </div>
+    <div class="nl-preview-row">
+      <span>Omega Seamaster 300 — Ref 2913</span>
+      <span class="nl-tag">Great value</span>
+    </div>
+    <div class="nl-preview-row">
+      <span>IWC Portugieser Automatic 7 Day</span>
+      <span class="nl-tag">Interesting pick</span>
+    </div>
+    <div class="nl-preview-row">
+      <span>Nomos Tangente 38 — box & papers</span>
+      <span class="nl-tag">Great value</span>
+    </div>
+    <div class="nl-preview-row" style="color:rgba(255,255,255,0.3); font-size:0.78rem; font-style:italic;">
+      <span>+ 2 more picks in the full issue</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<div class="about-section" id="about">
+  <div class="about-text">
+    <div class="section-tag">About</div>
+    <h2 class="about-title">A collector's eye.<br>An honest voice.</h2>
+    <p class="about-body">Watch Clarity was founded by Midas Rashid — a collector and enthusiast with more than a decade of experience in the pre-owned watch market.<br><br>Through his YouTube channel and social media, Midas shares honest reviews, collecting advice, and insights from his own collection. Over the years he's developed a sharp eye for originality, condition, and the red flags that can turn a dream watch into a costly mistake.<br><br>Watch Clarity is the next step: independent, affordable advice for anyone navigating the pre-owned market.</p>
+    <div class="about-socials">
+      <a href="https://www.youtube.com/@midasrashid" class="btn-secondary" style="font-size:0.78rem; padding:0.55rem 1.1rem;">YouTube</a>
+      <a href="https://www.instagram.com/watchclarity/" class="btn-secondary" style="font-size:0.78rem; padding:0.55rem 1.1rem;">Instagram</a>
+      <a href="https://www.tiktok.com/@watchclarity" class="btn-secondary" style="font-size:0.78rem; padding:0.55rem 1.1rem;">TikTok</a>
+    </div>
+  </div>
+  <div class="about-image">
+    <img src="https://watchclarity.com/assets/images/image02.jpg" alt="Midas Rashid — founder of Watch Clarity"
+      onerror="this.parentElement.style.background='var(--surface)'">
+  </div>
+</div>
+
+<!-- FAQ -->
+<section id="faqs">
+  <div class="section-tag">Questions</div>
+  <h2 class="section-title">Frequently asked.</h2>
+  <div class="faq-grid">
+    <div class="faq-item fade-up">
+      <div class="faq-q">Do you guarantee authenticity?</div>
+      <div class="faq-a">No — we assess based on listing photos and descriptions. For full peace of mind on a high-value purchase, always follow up with an in-person check by a certified watchmaker.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">How fast will I get my report?</div>
+      <div class="faq-a">Within 24 hours of receiving your listing and payment. Faster turnaround is available on request — just ask when you submit.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">Which platforms do you cover?</div>
+      <div class="faq-a">Any online listing — eBay, Chrono24, Watchfinder, Subdial, private dealers, physical stores. If there's a URL or photos, we can work with it.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">Is this AI-generated?</div>
+      <div class="faq-a">No. Every report is written by Midas — a real collector with 10+ years in the pre-owned market. No automation, no templates.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">How much does it cost?</div>
+      <div class="faq-a">£25 per listing report. £25 per sourcing request. That's it — no hidden fees, no subscription required.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">Can I see an example report first?</div>
+      <div class="faq-a">Yes — <a href="https://drive.google.com/file/d/15sxU9MyRCdHes-37P-pWwEfMFWgO_425/view?usp=sharing" style="color:var(--green); text-decoration:underline; text-underline-offset:3px;">view a sample report here</a> before you commit.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="Logo_Transparent.svg" alt="Watch Clarity">
+  </div>
+  <ul class="footer-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#newsletter">Watchlist</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="https://www.youtube.com/@midasrashid">YouTube</a></li>
+    <li><a href="https://www.tiktok.com/@watchclarity">TikTok</a></li>
+  </ul>
+  <div class="footer-copy">© 2026 Watch Clarity</div>
+</footer>
+
+<script>
+  function handleSignup(e) {
+    e.preventDefault();
+    document.getElementById('signup-msg').style.display = 'block';
+    document.getElementById('emailInput').value = '';
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
