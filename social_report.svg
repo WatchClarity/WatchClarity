@@ -1,0 +1,69 @@
+<svg viewBox="0 0 480 520" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <style>
+      .sans { font-family: 'Arial', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="520" fill="#f0f7f3"/>
+
+  <!-- Top green bar -->
+  <rect width="480" height="6" fill="#008037"/>
+
+  <!-- Card border -->
+  <rect x="1" y="1" width="478" height="518" fill="none" stroke="#d0e4d9" stroke-width="1"/>
+
+  <!-- Tag line -->
+  <rect x="32" y="36" width="3" height="18" fill="#008037"/>
+  <text x="44" y="50" class="sans" font-size="10" font-weight="600" fill="#008037" letter-spacing="2">WATCH CLARITY REPORT</text>
+
+  <!-- Title -->
+  <text x="32" y="96" font-size="28" font-weight="700" fill="#0f1f16">What's in</text>
+  <text x="32" y="130" font-size="28" font-weight="700" fill="#0f1f16">your report?</text>
+
+  <!-- Divider -->
+  <line x1="32" y1="152" x2="448" y2="152" stroke="#d0e4d9" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <rect x="32" y="172" width="36" height="36" rx="4" fill="#e6f4ed"/>
+  <text x="50" y="196" text-anchor="middle" font-size="16">🔍</text>
+  <text x="82" y="186" class="sans" font-size="13" font-weight="700" fill="#0f1f16">Condition check</text>
+  <text x="82" y="203" class="sans" font-size="11" fill="#5a7060">Case, dial, hands, crystal, bezel &amp; bracelet</text>
+
+  <!-- Divider -->
+  <line x1="32" y1="222" x2="448" y2="222" stroke="#d0e4d9" stroke-width="0.5"/>
+
+  <!-- Row 2 -->
+  <rect x="32" y="238" width="36" height="36" rx="4" fill="#e6f4ed"/>
+  <text x="50" y="262" text-anchor="middle" font-size="16">⚠️</text>
+  <text x="82" y="252" class="sans" font-size="13" font-weight="700" fill="#0f1f16">Red flag highlights</text>
+  <text x="82" y="269" class="sans" font-size="11" fill="#5a7060">Overpolishing, swapped parts, wrong references</text>
+
+  <!-- Divider -->
+  <line x1="32" y1="288" x2="448" y2="288" stroke="#d0e4d9" stroke-width="0.5"/>
+
+  <!-- Row 3 -->
+  <rect x="32" y="304" width="36" height="36" rx="4" fill="#e6f4ed"/>
+  <text x="50" y="328" text-anchor="middle" font-size="16">💷</text>
+  <text x="82" y="318" class="sans" font-size="13" font-weight="700" fill="#0f1f16">Market price comparison</text>
+  <text x="82" y="335" class="sans" font-size="11" fill="#5a7060">Checked across Chrono24, Watchfinder &amp; eBay</text>
+
+  <!-- Divider -->
+  <line x1="32" y1="354" x2="448" y2="354" stroke="#d0e4d9" stroke-width="0.5"/>
+
+  <!-- Row 4 -->
+  <rect x="32" y="370" width="36" height="36" rx="4" fill="#e6f4ed"/>
+  <text x="50" y="394" text-anchor="middle" font-size="16">✅</text>
+  <text x="82" y="384" class="sans" font-size="13" font-weight="700" fill="#0f1f16">Clear verdict</text>
+  <text x="82" y="401" class="sans" font-size="11" fill="#5a7060">Buy, Negotiate, or Avoid — in plain English</text>
+
+  <!-- Verdict pill -->
+  <rect x="32" y="428" width="416" height="52" rx="4" fill="#008037"/>
+  <text x="240" y="449" text-anchor="middle" class="sans" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)" letter-spacing="1">VERDICT</text>
+  <text x="240" y="469" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">Buy, Negotiate, or Avoid</text>
+
+  <!-- Price badge -->
+  <rect x="382" y="28" width="70" height="32" rx="2" fill="#008037"/>
+  <text x="417" y="49" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#ffffff">£25</text>
+</svg>
