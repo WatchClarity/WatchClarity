@@ -371,13 +371,146 @@
       <li>Market notes and buying tips</li>
       <li>Completely free</li>
     </ul>
-
-    <!-- =====================================================
-         MAILERLITE SIGNUP FORM
-         Replace everything between these comments with your
-         MailerLite embed code from:
-         MailerLite dashboard → Forms → Embedded forms → your form → Get code
-         ===================================================== -->
+ 
+    <!-- MAILERLITE FORM -->
+    <style>
+      /* Hide MailerLite's own container chrome */
+      #mlb2-30964111.ml-form-embedContainer { display: block !important; margin: 0 !important; }
+      #mlb2-30964111 .ml-form-embedWrapper { background: transparent !important; border: none !important; border-radius: 0 !important; display: block !important; width: 100% !important; max-width: 100% !important; padding: 0 !important; }
+      #mlb2-30964111 .ml-form-embedBody { padding: 0 !important; }
+ 
+      /* Hide the built-in title/description — we already have our own above */
+      #mlb2-30964111 .ml-form-embedContent { display: none !important; }
+ 
+      /* Name + email fields */
+      #mlb2-30964111 .ml-form-fieldRow input[type="text"],
+      #mlb2-30964111 .ml-form-fieldRow input[type="email"] {
+        background: rgba(255,255,255,0.08) !important;
+        border: 1px solid rgba(255,255,255,0.2) !important;
+        border-radius: 2px !important;
+        color: #ffffff !important;
+        font-family: 'DM Sans', sans-serif !important;
+        font-size: 0.9rem !important;
+        padding: 0.85rem 1rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        margin-bottom: 0 !important;
+        transition: border-color 0.2s;
+      }
+      #mlb2-30964111 .ml-form-fieldRow input[type="text"]::placeholder,
+      #mlb2-30964111 .ml-form-fieldRow input[type="email"]::placeholder { color: rgba(255,255,255,0.35) !important; }
+      #mlb2-30964111 .ml-form-fieldRow input[type="text"]:focus,
+      #mlb2-30964111 .ml-form-fieldRow input[type="email"]:focus { border-color: #6dcc9a !important; outline: none !important; }
+ 
+      /* Field row spacing */
+      #mlb2-30964111 .ml-form-fieldRow { margin-bottom: 0.6rem !important; }
+      #mlb2-30964111 .ml-form-fieldRow.ml-last-item { margin-bottom: 0.6rem !important; }
+ 
+      /* Checkbox row */
+      #mlb2-30964111 .ml-form-checkboxRow { margin-bottom: 0.75rem !important; float: none !important; }
+      #mlb2-30964111 .ml-form-checkboxRow .label-description,
+      #mlb2-30964111 .ml-form-checkboxRow .label-description p {
+        color: rgba(255,255,255,0.55) !important;
+        font-family: 'DM Sans', sans-serif !important;
+        font-size: 0.78rem !important;
+        line-height: 1.5 !important;
+      }
+      #mlb2-30964111 .ml-form-checkboxRow .label-description::before {
+        background-color: rgba(255,255,255,0.1) !important;
+        border-color: rgba(255,255,255,0.25) !important;
+      }
+ 
+      /* Submit button */
+      #mlb2-30964111 .ml-form-embedSubmit { margin: 0 !important; }
+      #mlb2-30964111 .ml-form-embedSubmit button.primary {
+        background-color: #008037 !important;
+        border: none !important;
+        border-radius: 2px !important;
+        font-family: 'DM Sans', sans-serif !important;
+        font-size: 0.82rem !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.1em !important;
+        text-transform: uppercase !important;
+        padding: 0.9rem 1.5rem !important;
+        width: 100% !important;
+        cursor: pointer !important;
+        transition: background 0.2s !important;
+      }
+      #mlb2-30964111 .ml-form-embedSubmit button.primary:hover {
+        background-color: #005a27 !important;
+      }
+ 
+      /* Success message */
+      #mlb2-30964111 .ml-form-successBody { padding: 0 !important; }
+      #mlb2-30964111 .ml-form-successContent h4 {
+        color: #6dcc9a !important;
+        font-family: 'Playfair Display', serif !important;
+        font-size: 1.2rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 0.4rem !important;
+      }
+      #mlb2-30964111 .ml-form-successContent p {
+        color: rgba(255,255,255,0.6) !important;
+        font-family: 'DM Sans', sans-serif !important;
+        font-size: 0.875rem !important;
+      }
+    </style>
+ 
+    <div id="mlb2-30964111" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-30964111">
+      <div class="ml-form-align-center">
+        <div class="ml-form-embedWrapper embedForm">
+          <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+            <div class="ml-form-embedContent" style=""></div>
+            <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/1800972/forms/165733937782458230/subscribe" data-code="" method="post" target="_blank">
+              <div class="ml-form-formContent">
+                <div class="ml-form-fieldRow">
+                  <div class="ml-field-group ml-field-name">
+                    <input aria-label="name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Name" autocomplete="given-name">
+                  </div>
+                </div>
+                <div class="ml-form-fieldRow ml-last-item">
+                  <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                    <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                  </div>
+                </div>
+              </div>
+              <div class="ml-form-checkboxRow ml-validate-required">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <div class="label-description"><p>Opt in to receive news and updates.</p></div>
+                </label>
+              </div>
+              <input type="hidden" name="ml-submit" value="1">
+              <div class="ml-form-embedSubmit">
+                <button type="submit" class="primary">Subscribe free</button>
+                <button disabled="disabled" style="display:none;" type="button" class="loading">
+                  <div class="ml-form-embedSubmitLoad"></div>
+                  <span class="sr-only">Loading...</span>
+                </button>
+              </div>
+              <input type="hidden" name="anticsrf" value="true">
+            </form>
+          </div>
+          <div class="ml-form-successBody row-success" style="display:none;">
+            <div class="ml-form-successContent">
+              <h4>You're on the list!</h4>
+              <p>Look out for the next Watchlist issue in your inbox.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function ml_webform_success_30964111() {
+        var $ = ml_jQuery || jQuery;
+        $('.ml-subscribe-form-30964111 .row-success').show();
+        $('.ml-subscribe-form-30964111 .row-form').hide();
+      }
+    </script>
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
+    <script>fetch("https://assets.mailerlite.com/jsonp/1800972/forms/165733937782458230/takel")</script>
+    <p style="font-size:0.74rem;color:rgba(255,255,255,0.3);margin-top:0.6rem;">No spam, ever. Unsubscribe at any time.</p>
+    <!-- END MAILERLITE -->
     <form class="newsletter-form" onsubmit="handleSignup(event)">
       <input type="email" class="newsletter-input" placeholder="your@email.com" required id="emailInput">
       <button type="submit" class="newsletter-submit">Subscribe free</button>
